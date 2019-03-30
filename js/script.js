@@ -46,7 +46,7 @@ var quotes = [
   }
 ];
 
-console.log(quotes);
+
 
 /***
   Create the `getRandomQuote` function to:
@@ -54,8 +54,12 @@ console.log(quotes);
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
 
-
-
+function getRandomQuote() {
+var randomNumber;
+randomNumber = Math.floor(Math.random() * quotes.length) ;
+return quotes[randomNumber];
+}
+console.log(getRandomQuote());
 
 /***
   Create the `printQuote` function to:
