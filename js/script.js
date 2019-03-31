@@ -45,7 +45,7 @@ var quotes = [
 
 /***
   Create the `getRandomQuote` function to
-  return a random qoute from the quote array object.
+  return a single random qoute from the quote array object.
 ***/
 
 function getRandomQuote() {
@@ -53,12 +53,12 @@ var randomNumber;
 randomNumber = Math.floor(Math.random() * quotes.length) ;
 return quotes[randomNumber];
 }
-console.log(getRandomQuote());
 
 /***
-  Create the `printQuote` function to print the single quote to the
-  web page using the getRandomQuote fuction and buld the html for the web page.
+  Create the `printQuote` function to enable to print the single quote to the
+  web page using the getRandomQuote fuction and build the html for the web page.
 ***/
+
 function printQuote() {
   var singleQuote = getRandomQuote();
   var html = '';
@@ -72,6 +72,9 @@ function printQuote() {
 
   }
   html += '</p>';
+
+  /* Output the quote to the web page under the div with the id quote-box */
+
   var outPutHtml = document.getElementById('quote-box');
   outPutHtml.innerHTML = html;
 }
@@ -85,6 +88,3 @@ function printQuote() {
 ***/
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
