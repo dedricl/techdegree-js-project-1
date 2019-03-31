@@ -7,7 +7,7 @@ project 1 - A Random Quote Generator
 
 
 /***
-  Create 5 array of quote objects and name it `quotes`.
+  Create an array of 5 quote objects and name it `quotes`.
 ***/
 var quotes = [
   {
@@ -56,7 +56,7 @@ return quotes[randomNumber];
 
 /***
   Create the `printQuote` function to enable to print the single quote to the
-  web page using the getRandomQuote fuction and build the html for the web page.
+  web page using the getRandomQuote fuction and build the html elements for the web page.
 ***/
 
 function printQuote() {
@@ -84,7 +84,7 @@ function printQuote() {
 
 /***
   When the button is click the function will load a new
-  quote from the quote object.
+  quote from the quote array object.
 ***/
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
