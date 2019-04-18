@@ -49,9 +49,9 @@ var quotes = [
 ***/
 
 function getRandomQuote() {
-var randomNumber;
-randomNumber = Math.floor(Math.random() * quotes.length) ;
-return quotes[randomNumber];
+  var randomNumber;
+  randomNumber = Math.floor(Math.random() * quotes.length) ;
+  return quotes[randomNumber];
 }
 
 /***
@@ -69,7 +69,6 @@ function printQuote() {
   }
   if (singleQuote.year) {
       html += '<span class = "year">' + singleQuote.year + '</span>';
-
   }
   html += '</p>';
 
